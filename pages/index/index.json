@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "header": "../../compomment/index/header/header"
+  }
+}

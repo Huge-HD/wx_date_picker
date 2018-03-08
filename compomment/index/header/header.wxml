@@ -1,0 +1,8 @@
+<!--compomment/index/header/header.wxml-->
+<view class='header-container'>
+  <view class='header-pic'>
+    <image src='{{headimg}}' mode='aspectFill'></image>
+  </view>
+  <view class='header-name'>{{username}}</view>
+</view>
+

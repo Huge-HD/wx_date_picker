@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view>
+  <!-- 以下是对一个自定义组件的引用 -->
+  <header inner-text="{{motto}}"></header>
+</view>
+<view class="nav">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+
+<navigator url='../../libs/citySelector/switchcity/switchcity'>{{address}}</navigator>
+
